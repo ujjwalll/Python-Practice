@@ -1,0 +1,34 @@
+n = int(input())
+s1 = input()
+s2 = input()
+arr = [[1,1],[1,2],[1,3],[2,1],[2,2],[2,3],[3,1],[3,2],[3,3]]
+if(s1=='aa' or s2=='aa'):
+    idx = arr.index([1,1])
+    arr = arr[:idx]+arr[idx+1:]
+if(s1=='ab' or s2=='ab'):
+    idx = arr.index([1,2])
+    arr = arr[:idx]+arr[idx+1:]
+if(s1=='ac' or s2=='ac'):
+    idx = arr.index([1,3])
+    arr = arr[:idx]+arr[idx+1:]
+if(s1=='ba' or s2=='ba'):
+    idx = arr.index([2,1])
+    arr = arr[:idx]+arr[idx+1:]
+if(s1=='bb' or s2=='bb'):
+    idx = arr.index([2,2])
+    arr = arr[:idx]+arr[idx+1:]
+if(s1=='bc' or s2=='bc'):
+    idx = arr.index([2,3])
+    arr = arr[:idx]+arr[idx+1:]
+if(s1=='ca' or s2=='ca'):
+    idx = arr.index([3,1])
+    arr = arr[:idx]+arr[idx+1:]
+if(s1=='cb' or s2=='cb'):
+    idx = arr.index([3,2])
+    arr = arr[:idx]+arr[idx+1:]
+if(s1=='cc' or s2=='cc'):
+    idx = arr.index([3,3])
+    arr = arr[:idx]+arr[idx+1:]
+ans = ""
+try:
+    k = arr.index([1,1])
